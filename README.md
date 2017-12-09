@@ -10,9 +10,9 @@ Donde el diseño se puede realizar como mejor nos parezca, manteniendo la estruc
 ![](assets/images/desktop.png)
 
 
-### __Responsive__
+### __Mobile__
 
-![](assets/images/responsive.png)
+![](assets/images/mobile.png)
 
 ## __Reto de Codigo finalizado__
 
