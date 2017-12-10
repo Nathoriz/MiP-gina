@@ -8,106 +8,42 @@ body{
     margin: 0;
 }
 
-/*Grid sistem*/
+/*GRID SISTEM*/
 
-/*colum-width*/
+/*MOBILE*/
 
-.col-1 {
-    width: 8.33333333%;
-  }
-  
-.col-2 {
-    width: 16.66666667%;
-  }
-  
-.col-3 {
-    width: 25%;
-  }
-  
-.col-4 {
-    width: 33.33333333%;
-  }
-  
-.col-5 {
-    width: 41.66666667%;
-  }
-  
-.col-6 {
-    width: 50%;
-  }
-  
-.col-7 {
-    width: 58.33333333%;
-  }
-  
-.col-8 {
-    width: 66.66666667%;
-  }
-  
-.col-9 {
-    width: 75%;
-  }
-  
-.col-10 {
-    width: 83.33333333%;
-  }
-  
-.col-11 {
-    width: 91.66666667%;
-  }
-  
-.col-12 {
-    width: 100%;
-  }
+/*colum-width /row-height */
 
-/*row-height*/
+/*FILAS*/
 
-.row-1 {
+.col-row-1 {
     height: 8.33333333%;
   }
   
-.row-2 {
+.col-row-2 {
     height: 16.66666667%;
   }
   
-.row-3 {
+.col-row-3 {
     height: 25%;
   }
-  
-.row-4 {
-    height: 33.33333333%;
-  }
-  
-.row-5 {
+
+.col-row-5 {
     height: 41.66666667%;
   }
   
-.row-6 {
+.col-row-6 {
     height: 50%;
   }
   
-.row-7 {
+.col-row-7 {
     height: 58.33333333%;
   }
-  
-.row-8 {
-    height: 66.66666667%;
-  }
-  
-.row-9 {
-    height: 75%;
-  }
-  
-.row-10 {
-    height: 83.33333333%;
-  }
-  
-.row-11 {
-    height: 91.66666667%;
-  }
-  
-.row-12 {
-    height: 100%;
+ 
+/*COLUMNA*/  
+
+.col-row-12 {
+    width: 100%;
   }
 
 
@@ -115,6 +51,8 @@ body{
 
 
 /*Clases reutilizables*/
+
+/*MOBILE-DESKTOP*/
 
 .capitalize{
     text-transform: capitalize;
@@ -138,9 +76,7 @@ body{
 
 /*fin clases reutilizables*/
 
-
-
-/*mobile*/
+/*MOBILE*/
 
 [class*='col-'] {
     float: left;
@@ -168,6 +104,9 @@ div.title , div.menu {
     width: auto;
 }
 
+
+/*SE CAMBIARA CUANDO PASE A DESKTOP*/
+
 i.desktopOrmobile{
     display: block;
     color: white;
@@ -177,7 +116,10 @@ nav.desktopOrmobile{
     display: none;
 }
 
-/* Revisar esta clase par cuando se haga responsive*/
+/*SE CAMBIARA CUANDO PASE A DESKTOP ---FIN--- */
+
+
+/* Revisar esta clase*/
 div.menu{
     float: right;
     margin: 10px 0;
@@ -194,8 +136,6 @@ ul li{
     margin-left: 10px;
 }
 
-
-
 a{
     text-decoration-line: none;
     color: white;
@@ -207,7 +147,9 @@ a{
 /*desktop*/
 
 @media (min-width: 480px) {
-    
+
+/*SI LA PANTALLA DEL  DISPOSITIVO TIENE MAS DE 480PX DE ANCHO ENTONCES SE HARA LO SIGUIENTE */    
+
     nav.desktopOrmobile{
         display: inline-block;
     }
@@ -216,6 +158,20 @@ a{
         display: none;
     }
 
+    /*GRID SISTEM*/
 
+    /*LAS FILAS PASAN A SER COLUMNAS*/
 
+    .col-row-2 {
+        width: 16.66666667%;
+    }    
+
+    .col-row-7 {
+        width: 58.33333333%;
+    }
+
+    .col-row-3 {
+        width: 25%;
+    }
+    /*FIN GRID SISTEM*/
 }
