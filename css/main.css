@@ -115,6 +115,7 @@ div{
 
 section{
     box-sizing: border-box;
+    box-sizing: border-box;
     overflow: overlay;
     height: auto;
 }
@@ -195,7 +196,11 @@ a{
 
 .business-name{
     padding: 65px 0;
-    text-shadow: 3px 3px 10px #fff;
+    text-shadow:
+    -1px -1px 15px #fff,
+     1px -1px 15px #fff,
+    -1px 1px 15px #fff,
+     1px 1px 15px #fff;
     text-align: center;
     font-weight: bold;
     font-size: 4rem;
@@ -280,6 +285,8 @@ a{
     .business-name{
         padding: 110px 0;
         font-size: 8rem;
+        font-weight: bold;
+        text-align: center;
     }
 
     .card{
