@@ -18,11 +18,11 @@ Donde el diseño se puede realizar como mejor nos parezca, manteniendo la estruc
 
 ### __Desktop__
 
-![](assets/images/.png)
+![](assets/images/Proyecto-Desktop.png)
 
 ### __Mobile__
 
-![](assets/images/.png)
+![](assets/images/Proyecto-Mobile.png)
 
 
 ## __INTEGRANTES__
