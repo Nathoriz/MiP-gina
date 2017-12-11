@@ -9,12 +9,25 @@ body{
     margin: 0;
 }
 
-h1 {
+p.title{
   font-family: 'Pacifico', cursive;
+  font-size: 30px;
 }
 
 h3, p {
   font-family: 'Barlow', sans-serif;
+}
+
+h3{
+    margin-bottom: 30px;
+}
+
+p{
+    text-align: justify;
+}
+
+div{
+    box-sizing: border-box;
 }
 /*GRID SISTEM*/
 
@@ -30,7 +43,6 @@ h3, p {
 
 .col-row-2 {
     height: 16.66666667%;
-    padding-left: 75px;
   }
 
 .col-row-3 {
@@ -102,39 +114,58 @@ h3, p {
 
 
 section{
-    outline: 1px solid red;
     box-sizing: border-box;
     overflow: overlay;
     height: auto;
 }
 
+
+
 header{
-    outline: 1px solid red;
-    height: 70px;
-    padding: 15px 75px;
+    height: 80px;
+    padding: 15px 35px;
     background-color: #ffac0d;
 }
 
-div.title{
+div.titleContainer{
     display: inline-block;
+    text-align: center;
 }
 
-div.title , div.menu {
+div.titleContainer , div.menu {
     width: auto;
 }
 
 /*SE CAMBIARA CUANDO PASE A DESKTOP*/
 
 i.desktopOrmobile{
+    padding: 5px;
+    font-size: 25px;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    text-align: center;
     display: block;
     color: white;
 }
 
 nav.desktopOrmobile{
     display: none;
-    font-family: 'Barlow', sans-serif;
 }
 
+.mobile-margin{
+    margin-top: 125px;
+}
+
+.card{
+    margin-top: 125px;
+}
+.section-marginTop{
+    margin-top: 80px;
+}
+
+.section-marginBottom{
+    margin-bottom: 80px;
+}
 /*SE CAMBIARA CUANDO PASE A DESKTOP ---FIN--- */
 
 
@@ -148,6 +179,8 @@ div.menu{
 
 ul{
     list-style: none;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 ul li{
@@ -161,23 +194,38 @@ a{
 }
 
 .business-name{
-    padding: 120px 0;
+    padding: 65px 0;
     text-shadow: 3px 3px 10px #fff;
-    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
 }
 
-.card{
-    margin-left: 0px;
+.div-padding{
+    padding: 30px;
+    border: 1px solid grey;
+    border-radius: 25px;
+}
+
+.buttom{
+    border: 1px solid #c70039;
+    border-radius: 5px;
+    background-color: #c70039;
+    margin-top: 35px;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
 }
 
 .footer{
     background-color: #ffac0d;
-    text-align: center;
+    font-weight: bold;
     height: 100px;
 }
 
 .footer p{
     font-size: 1.2rem;
+    text-align: center;
     margin: 37px 0;
 }
 
@@ -189,17 +237,23 @@ a{
 
 .img-fox1{
     background-image: url('../assets/images/fox-1.png');
+    border-radius: 20px;
     height: 200px;
+    margin-bottom: 25px;
 }
 
 .img-fox2{
     background-image: url('../assets/images/fox-2.png');
+    border-radius: 20px;
     height: 200px;
+    margin-bottom: 25px;
 }
 
 .img-fox3{
     background-image: url('../assets/images/fox-3.png');
+    border-radius: 20px;
     height: 200px;
+    margin-bottom: 25px;
 }
 
 /*fin mobile*/
@@ -224,14 +278,35 @@ a{
     }
 
     .business-name{
-        padding: 120px 0;
-        text-shadow: 3px 3px 10px #fff;
+        padding: 110px 0;
         font-size: 8rem;
     }
 
     .card{
         margin-left: 12%;
+        margin-top: 0;
     }
+
+    .desktop-margin{
+        margin-left: 75px;
+    }
+
+    .mobile-margin{
+        margin-top: 0px;
+    }
+
+    .section-marginTop{
+        margin-top: 70px;
+    }
+    
+    .section-marginBottom{
+        margin-bottom: 70px;
+    }
+
+    .div-padding{
+        padding: 35px;
+    }
+
     /*GRID SISTEM*/
 
     /*LAS FILAS PASAN A SER COLUMNAS*/
